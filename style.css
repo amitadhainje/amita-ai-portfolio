@@ -1,4 +1,66 @@
+/* 🔤 Fonts */
 body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #0f172a, #1e3a8a);
+    color: #e2e8f0;
+}
+
+/* 🌐 Navbar */
+nav {
+    background: rgba(15, 23, 42, 0.8);
+    padding: 15px;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: #e2e8f0;
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* 🖼️ Hero Section (Banner) */
+.hero {
+    height: 90vh;
+    background: url("images/banner.png") no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #cbd5f5;
+}
+
+/* 📦 Sections */
+.container {
+    padding: 50px;
+}
+
+/* ✨ Cards / Sections */
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(10px);
+}body {
     font-family: Arial;
     margin: 40px;
 }
