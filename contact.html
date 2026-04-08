@@ -1,0 +1,16 @@
+<?php include 'header.php'; ?>
+
+<h2>Contact</h2>
+<form method="post">
+    Name: <input type="text" name="name"><br><br>
+    Message: <textarea name="message"></textarea><br><br>
+    <input type="submit" value="Send">
+</form>
+
+<?php
+if ($_POST) {
+    echo "<p>Thanks, " . htmlspecialchars($_POST['name']) . "!</p>";
+}
+?>
+
+<?php include 'footer.php'; ?>
