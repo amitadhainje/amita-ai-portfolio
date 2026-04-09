@@ -1,81 +1,84 @@
-/* 🔤 Fonts */
-
-body {
+/* Reset */
+* {
     margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to right, #0f172a, #1e3a8a);
-    color: #e2e8f0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 23px;
 }
 
-/* 🌐 Navbar */
-nav {
-    /* background: rgba(15, 23, 42, 0.8); */
-    padding: 0px;
-    position: sticky;
-    /* top: 0; */
+/* Body */
+body {
+    background-color: #f4f8fc;
+    color: #333;
 }
 
-nav a {
-    color: #e2e8f0;
-    margin-right: 20px;
-    text-decoration: none;
-    font-weight: 500;
+/* Banner with image */
+.banner {
+    background: url('images/banner.png') no-repeat center center/cover;
+    height: 450px;
+    position: relative;
 }
 
-nav a:hover {
-    color: #38bdf8;
-}
-
-/* 🖼️ Hero Section (Banner) */
-.hero {
-    height: 65vh;
-    background: url("images/banner.png") no-repeat center center/cover;
+/* Optional overlay for readability */
+.banner-overlay {
+    background-color: rgba(21, 101, 192, 0.7); /* blue overlay */
+    height: 100%;
     display: flex;
     align-items: center;
-    padding-left: 60px;
+    justify-content: center;
+    color: white;
 }
 
-.hero-content {
-    max-width: 400px;
-}
-
-.hero h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 20px;
-    color: #cbd5f5;
-}
-
-/* 📦 Sections */
+/* Layout */
 .container {
-    padding: 50px;
+    display: flex;
+    min-height: 80vh;
 }
 
-/* ✨ Cards / Sections */
-.card {
-    background: rgba(255, 255, 255, 0.05);
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    /* All the blue shades - #0a1930 , #1f4068 and #4a76c2, #ffffff, #e0e0e0, #00ffff, #00bfff*/
+    background-color: #0a1930;
     padding: 20px;
-    border-radius: 12px;
-    margin-bottom: 20px;
-    backdrop-filter: blur(10px);
-}body {
-    font-family: Arial;
-    margin: 40px;
 }
 
-header {
-    background: #f4f4f4;
-    padding: 10px;
+.sidebar ul {
+    list-style: none;
 }
 
-nav a {
-    margin-right: 15px;
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
     text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
-footer {
+.sidebar ul li a:hover {
+    color: #cfe8ff;
+}
+
+/* Content */
+.content {
+    flex: 1;
+    padding: 30px;
+    background-color: white;
+}
+
+.content h2 {
+    color: #1565c0;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+.footer {
+    background-color: #0a1930;
+    color: white;
     text-align: center;
+    padding: 15px;
 }
